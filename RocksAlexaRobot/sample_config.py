@@ -31,8 +31,7 @@ class Config(object):
     SUPPORT_CHAT = 'Shayri_Music_Lovers'  #Your own group for support, do not add the @
     JOIN_LOGGER = -1001776076983  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -1001776076983  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    MONGO_DB_URI = "mongodb+srv://private:Asad_Ali7818@cluster0.rdghb.mongodb.net/private?retryWrites=true&w=majority"
-    
+
     #RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
     LOAD = []

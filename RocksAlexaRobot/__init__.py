@@ -112,7 +112,6 @@ if ENV:
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Dr_Asad_Ali")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://private:Asad_Ali7818@cluster0.rdghb.mongodb.net/private?retryWrites=true&w=majority")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', None)
 
@@ -123,7 +122,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from RocksAlexaRobot.sample_config import Development as Config
+    from RocksAlexaRobot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -212,8 +211,6 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("KURUMIBOT", API_ID, API_HASH)
 pgram = Client("RocksAlexaRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
-
-pbot = Client("RocksAlexaRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
