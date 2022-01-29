@@ -10,11 +10,11 @@
 <p align="center"><a href="https://t.me/Dr_Asad_Ali"><img src="https://telegra.ph/file/44870675794b9089a4fa8.jpg" width="400"></a></p>
 
 <p align="center">
-    <a href="https://app.codacy.com/manual/jankarikiduniya/Rocks-Alexa-Official-Management/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management"> <img src="https://img.shields.io/github/repo-size/jankarikiduniya/Rocks-Alexa-Official-Management?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management/commits/prince"> <img src="https://img.shields.io/github/last-commit/jankarikiduniya/Rocks-Alexa-Official-Management?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management/issues"> <img src="https://img.shields.io/github/issues/jankarikiduniya/Rocks-Alexa-Official-Management?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management/network/members"> <img src="https://img.shields.io/github/forks/jankarikiduniya/Rocks-Alexa-Official-Management?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://app.codacy.com/manual/jankarikiduniya/Rocks-Alexa-Official-Management-V1/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1"> <img src="https://img.shields.io/github/repo-size/jankarikiduniya/Rocks-Alexa-Official-Management-V1?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1/commits/prince"> <img src="https://img.shields.io/github/last-commit/jankarikiduniya/Rocks-Alexa-Official-Management-V1?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1/issues"> <img src="https://img.shields.io/github/issues/jankarikiduniya/Rocks-Alexa-Official-Management-V1?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1/network/members"> <img src="https://img.shields.io/github/forks/jankarikiduniya/Rocks-Alexa-Official-Management-V1?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
@@ -32,7 +32,7 @@ The Easiest Way To Deploy This Bot Direct From GitHub
 
 The Easiest Way To Deploy This On Heroku For Any Browser Copy Link Supported
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
  
  
 # ❤️ Support
