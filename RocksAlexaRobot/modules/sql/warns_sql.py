@@ -12,7 +12,6 @@ import threading
 from RocksAlexaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (Boolean, Column, Integer, String, UnicodeText, distinct,
                         func)
-from sqlalchemy.dialects import postgresql
 
 
 class Warns(BASE):
