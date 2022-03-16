@@ -15,6 +15,7 @@ spongemock
 zalgo-text
 geopy
 psutil
+postgres
 jikanpy
 speedtest-cli
 coffeehouse
