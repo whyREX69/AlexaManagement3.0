@@ -12,9 +12,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 
-engine = create_engine("postgresql://asadrepo:asadrepo786@database-2.cinnmf7f1vsz.us-east-2.rds.amazonaws.com:5432/asadali
-")
-   db = scoped_session(sessionmaker(bind=engine))
+def start() -> scoped_session:
+    engine = create_engine(DB_URI, client_encoding="utf8")
+    BASE.metadata.bind = engine
+    BASE.metadata.create_all(engine)
+    return scoped_session(sessionmaker(bind=engine, autoflush=False))
 
 
 BASE = declarative_base()
