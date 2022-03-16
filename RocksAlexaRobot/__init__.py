@@ -8,7 +8,6 @@
 
 import logging
 import os
-import re
 import sys
 import time
 import spamwatch
@@ -203,12 +202,6 @@ if not SPAMWATCH_API:
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
 else:
     sw = spamwatch.Client(SPAMWATCH_API)
-    
-    uri = os.getenv("DATABASE_URL")  # or other relevant config var
-if uri.startswith("postgres://"):
-    uri = uri.replace("postgres://", "postgresql://", 1)
-# rest of connection code using the connection string `uri`
-    
     
 #install aiohttp session
 print("[RocksAlexaRobot]: Initializing AIOHTTP Session")
