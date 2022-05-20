@@ -59,8 +59,6 @@ def asadali(update, context):
         Button.url('🥰 YᴏᴜTᴜʙᴇ 😍️', 'https://youtube.com/jankarikiduniya')
       ]
     )
-  )
-
     
 @run_async
 def gbun(update, context):
