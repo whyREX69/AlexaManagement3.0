@@ -44,6 +44,7 @@ class Config(object):
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     BOT_USERNAME = "Dr_Asad_AliBot"
+    MONGO_DB_URI = "mongodb+srv://AsadAli:AsadAli@cluster0.3ejv7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     BOT_ID = "5329645589"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
