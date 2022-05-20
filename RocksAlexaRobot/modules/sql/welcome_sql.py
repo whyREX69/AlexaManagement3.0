@@ -12,11 +12,11 @@ from typing import Union
 
 from RocksAlexaRobot.modules.helper_funcs.msg_types import Types
 from RocksAlexaRobot.modules.sql import BASE, SESSION
-from sqlalchemy import (BigInteger, Boolean, Column, Integer, String,
+from sqlalchemy import (BigInteger, Boolean, Column, BigInteger, String,
                         UnicodeText)
 
 DEFAULT_WELCOME = 'Hey {first}, how are you?'
-DEFAULT_GOODBYE = 'Chala Ja BSDK 🤣!'
+DEFAULT_GOODBYE = 'Chala Ja BSDK !'
 
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  #Discord welcome messages copied
@@ -29,7 +29,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just joined the chat - asdgfhak!",
     "{first} just joined. Everyone, look busy!",
     "Welcome, {first}. Stay awhile and listen.",
-    "Welcome, {first}. We were expecting you ( ͡° ͜ʖ ͡°)",
+    "Welcome, {first}. We were expecting you",
     "Welcome, {first}. We hope you brought pizza.",
     "Welcome, {first}. Leave your weapons by the door.",
     "Swoooosh. {first} just landed.",
@@ -39,7 +39,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just slid into the chat.",
     "A {first} has spawned in the chat.",
     "Big {first} showed up!",
-    "Where’s {first}? In the chat!",
+    "Where {first}? In the chat!",
     "{first} hopped into the chat. Kangaroo!!",
     "{first} just showed up. Hold my beer.",
     "Challenger approaching! {first} has appeared!",
@@ -96,20 +96,20 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just joined, be at alert they could be a spy.",
     "{first} joined the group, read by Mark Zuckerberg, CIA and 35 others.",
     "Welcome {first}, watch out for falling monkeys.",
-    "Everyone stop what you’re doing, We are now in the presence of {first}.",
+    "Everyone stop what you are doing, We are now in the presence of {first}.",
     "Hey {first}, do you wanna know how I got these scars?",
     "Welcome {first}, drop your weapons and proceed to the spy scanner.",
     "Stay safe {first}, Keep 3 meters social distances between your messages.",  #Corona memes lmao
     "Hey {first}, Do you know I once One-punched a meteorite?",
-    "You’re here now {first}, Resistance is futile",
+    "You are here now {first}, Resistance is futile",
     "{first} just arrived, the force is strong with this one.",
-    "{first} just joined on president’s orders.",
+    "{first} just joined on president orders.",
     "Hi {first}, is the glass half full or half empty?",
     "Yipee Kayaye {first} arrived.",
-    "Welcome {first}, if you’re a secret agent press 1, otherwise start a conversation",
-    "{first}, I have a feeling we’re not in Kansas anymore.",
-    "They may take our lives, but they’ll never take our {first}.",
-    "Coast is clear! You can come out guys, it’s just {first}.",
+    "Welcome {first}, if you have a secret agent press 1, otherwise start a conversation",
+    "{first}, I have a feeling we have not in Kansas anymore.",
+    "They may take our lives, but they never take our {first}.",
+    "Coast is clear! You can come out guys, it just {first}.",
     "Welcome {first}, pay no attention to that guy lurking.",
     "Welcome {first}, may the force be with you.",
     "May the {first} be with you.",
@@ -129,7 +129,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Come. I don't want to destroy this place",  #hunter x hunter
     "I... am... Whitebeard!...wait..wrong anime.",  #one Piece
     "Hey {first}...have you ever heard these words?",  #BNHA
-    "Can't a guy get a little sleep around here?",  #Kamina Falls – Gurren Lagann
+    "Can't a guy get a little sleep around here?",  #Kamina Falls �? Gurren Lagann
     "It's time someone put you in your place, {first}.",  #Hellsing
     "Unit-01's reactivated..",  #Neon Genesis: Evangelion
     "Prepare for trouble...And make it double",  #Pokemon
@@ -235,11 +235,11 @@ class Welcome(BASE):
 
     custom_welcome = Column(
         UnicodeText, default=random.choice(DEFAULT_WELCOME_MESSAGES))
-    welcome_type = Column(Integer, default=Types.TEXT.value)
+    welcome_type = Column(BigInteger, default=Types.TEXT.value)
 
     custom_leave = Column(
         UnicodeText, default=random.choice(DEFAULT_GOODBYE_MESSAGES))
-    leave_type = Column(Integer, default=Types.TEXT.value)
+    leave_type = Column(BigInteger, default=Types.TEXT.value)
 
     clean_welcome = Column(BigInteger)
 
@@ -255,7 +255,7 @@ class Welcome(BASE):
 
 class WelcomeButtons(BASE):
     __tablename__ = "welcome_urls"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
     chat_id = Column(String(14), primary_key=True)
     name = Column(UnicodeText, nullable=False)
     url = Column(UnicodeText, nullable=False)
@@ -270,7 +270,7 @@ class WelcomeButtons(BASE):
 
 class GoodbyeButtons(BASE):
     __tablename__ = "leave_urls"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
     chat_id = Column(String(14), primary_key=True)
     name = Column(UnicodeText, nullable=False)
     url = Column(UnicodeText, nullable=False)
@@ -295,7 +295,7 @@ class WelcomeMute(BASE):
 
 class WelcomeMuteUsers(BASE):
     __tablename__ = "human_checks"
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     chat_id = Column(String(14), primary_key=True)
     human_check = Column(Boolean)
 
