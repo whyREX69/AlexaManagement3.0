@@ -83,7 +83,7 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get('API_ID', None)
     API_HASH = os.environ.get('API_HASH', None)
-    DB_URI = os.environ.get('DATABASE_URL', 'postgresql://nsuzpjxvdzxjes:b6877be9131e11fdfa2b3c5d983f58ddfed6c085e817893be23bd9f9d6e94770@ec2-34-224-226-38.compute-1.amazonaws.com:5432/d3r5b8hojs47u7')
+    DB_URI = os.environ.get('DATABASE_URL')    
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
@@ -194,8 +194,8 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+DRAGONS.add(5303133436)
+DEV_USERS.add(5303133436)
 
 if not SPAMWATCH_API:
     sw = None
@@ -208,7 +208,7 @@ print("[RocksAlexaRobot]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession() 
 arq = ARQ("https://thearq.tech", "GKNOHX-UDSREJ-AWTSGO-XFDSCY-ARQ", aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("KURUMIBOT", API_ID, API_HASH)
+telethn = TelegramClient("Alexa", API_ID, API_HASH)
 pgram = Client("RocksAlexaRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
