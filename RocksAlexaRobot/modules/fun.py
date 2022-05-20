@@ -21,8 +21,9 @@ from RocksAlexaRobot.modules.disable import DisableAbleCommandHandler, DisableAb
 from RocksAlexaRobot.modules.helper_funcs.alternate import typing_action
 from RocksAlexaRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from RocksAlexaRobot.modules.helper_funcs.extraction import extract_user
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
 
-GN_IMG= "https://telegra.ph/file/f67bb5f05e5b0a0d3288c.jpg"
+GN_IMG= "https://telegra.ph/file/31c4b0f1a5d19bd44b26e.mp4"
 DECIDE_IMG= "https://telegra.ph/file/313cfbc4056bd3b5cd995.jpg"
 JUDGE_IMG= "https://telegra.ph/file/a2ebfdd262def30ad42a7.jpg"
 
@@ -35,7 +36,7 @@ def goodnight(update, context):
     reply = f"*Hey {escape_markdown(first_name)} \nGood Night! 😴*"
     message.reply_photo(GN_IMG,reply, parse_mode=ParseMode.MARKDOWN)
 
-GM_IMG= "https://telegra.ph/file/97c03a0eb3dbb0056a753.jpg"
+GM_IMG= "https://telegra.ph/file/a604e1627bfae9cef7b57.mp4"
 @run_async
 @typing_action
 def goodmorning(update, context):
@@ -43,6 +44,22 @@ def goodmorning(update, context):
     first_name = update.effective_user.first_name
     reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
     message.reply_photo(GM_IMG,reply, parse_mode=ParseMode.MARKDOWN)
+    
+ASD_IMG= "https://telegra.ph/file/4f7894b5dd5cd1d47543a.jpg"
+@run_async
+@typing_action
+def asadali(update, context):
+    message = update.effective_message
+    first_name = update.effective_user.first_name
+    reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
+    message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
+    buttons=(
+      [
+        Button.url('❤️ ᴄʜᴀᴛ ❤️', 'https://t.me/Dr_Assad_Ali'),
+        Button.url('🥰 YᴏᴜTᴜʙᴇ 😍️', 'https://youtube.com/jankarikiduniya')
+      ]
+    )
+  )
 
     
 @run_async
@@ -247,6 +264,7 @@ def pat(update: Update, context: CallbackContext):
        
     
 GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|good morning)"), goodmorning, friendly="goodmorning")
+ASADALI_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(asadali|asad)"), asadali, friendly="asadali")
 GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight")
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 

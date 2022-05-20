@@ -29,7 +29,7 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from RocksAlexaRobot import pbot
+from RocksAlexaRobot import pgram as pbot
 from RocksAlexaRobot.function.dbfun import get_couple, save_couple
 
 # Date and time

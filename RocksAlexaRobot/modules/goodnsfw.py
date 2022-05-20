@@ -74,7 +74,7 @@ def list_nsfw_chats(update: Update, context: CallbackContext):
         try:
             x = context.bot.get_chat(int(*chat))
             name = x.title if x.title else x.first_name
-            text += f"• <code>{name}</code>\n"
+            text += f"�? <code>{name}</code>\n"
         except BadRequest:
             sql.rem_nsfw(*chat)
         except Unauthorized:
@@ -234,4 +234,4 @@ Commands :
  - /baka: Sends Random Baka Shout GIFs.
 """
 
-__mod_name__ = "🐰 AɴɪᴍᴇPG"
+__mod_name__ = "? ????????"
