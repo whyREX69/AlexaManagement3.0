@@ -57,7 +57,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("🔐 ᴍᴏʀᴇ ʜᴇʟᴘ.", url=f"t.me/ROCKS_ALEXA_MANAGEMENT_BOT?start=help"),
+        InlineKeyboardButton("🔐 ᴍᴏʀᴇ ʜᴇʟᴘ.", url=f"t.me/ALEXA_MANAGEMENTBOT?start=help"),
         InlineKeyboardButton("🔄 ɢᴏ ɪɴʟɪɴᴇ", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -79,7 +79,7 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("🔐 ᴍᴀɪɴ ʙᴏᴛ", url="https://t.me/ROCKS_ALEXA_MANAGEMENT_BOT?start=help"),
+        InlineKeyboardButton("🔐 ᴍᴀɪɴ ʙᴏᴛ", url="https://t.me/ALEXA_MANAGEMENTBOT?start=help"),
         InlineKeyboardButton("🔄 ɢᴏ ɪɴʟɪɴᴇ", switch_inline_query_current_chat=""),
     )
 
