@@ -15,7 +15,6 @@ spongemock
 zalgo-text
 geopy
 psutil
-postgres
 jikanpy
 speedtest-cli
 coffeehouse
@@ -45,7 +44,7 @@ hachoir
 pybase64
 pySmartDL
 validators
-pyrogram>=1.0.7
+pyrogram
 datetime
 nltk
 aiohttp>=3.7.4
@@ -74,7 +73,9 @@ opencv-python-headless
 countryinfo==0.1.2
 secureme #encrypt
 aiofiles
+aiohttp>=2.2.5
 wget
 pymongo==3.11.0
 dnspython
-asyncio
+psutil==5.8.0
+gpytranslate
