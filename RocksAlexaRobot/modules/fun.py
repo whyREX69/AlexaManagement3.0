@@ -53,12 +53,15 @@ def asadali(update, context):
     first_name = update.effective_user.first_name
     reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ*"
     message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
-    buttons=(
-      [
-        Button.url('❤️ ᴄʜᴀᴛ ❤️', 'https://t.me/Dr_Assad_Ali'),
-        Button.url('🥰 YᴏᴜTᴜʙᴇ 😍️', 'https://youtube.com/jankarikiduniya')
-      ]
-    )
+    reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="💌 ᴄʜᴀᴛ 💌 ", url=f"t.me/Dr_Assad_Ali"),
+                  InlineKeyboardButton(text="✌ YᴏᴜTᴜʙᴇ️ ✌️", url=f"https://youtube.com/jankarikiduniya"),
+                  ]
+                ]
+            ),
+        )
     
 @run_async
 def gbun(update, context):
