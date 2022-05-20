@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/RocksAlexaRobot
-RUN git clone -b shiken https://github.com/jankarikiduniya/Rocks-Alexa-Official-Management-V1 /root/RocksAlexaRobot
+RUN git clone -b shiken https://github.com/jankarikiduniya/AlexaManagement3.0 /root/RocksAlexaRobot
 WORKDIR /root/RocksAlexaRobot
 
 #Copy config file to /root/RocksAlexaRobot/RocksAlexaRobot
