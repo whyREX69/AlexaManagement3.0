@@ -29,7 +29,7 @@ class Config(object):
     TOKEN = "1616584987:AAGiKBL-7Q4mihWH03AGtyBjfDNdp23zJVc"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 5303133436  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "Dr_Assad_Ali"
-    SUPPORT_CHAT = 'Shayri_Music_Lovers'  #Your own group for support, do not add the @
+    SUPPORT_CHAT = 'Alexa_Help'  #Your own group for support, do not add the @
     UPDATES_CHANNEL = 'AsadSupport' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001717283097  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "http://removebg.com"

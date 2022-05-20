@@ -98,23 +98,23 @@ PMSTART_CHAT = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="💠 ᴀᴅᴅ ᴀʟᴇxᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💠",
-                            url="t.me/ROCKS_ALEXA_MANAGEMENT_BOT?startgroup=true"),
+                            text="💖 ᴀᴅᴅ ᴀʟᴇxᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💖",
+                            url="t.me/ALEXA_MANAGEMENTBOT?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="💠 ᴋɪɴɢ", url="t.me/Dr_Asad_Ali"),
-                       InlineKeyboardButton(text="💠 ғᴇᴅ", url="t.me/rockslogchannel"),
+                       InlineKeyboardButton(text="💌 ᴋɪɴɢ", url="t.me/HarshitSharma361"),
+                       InlineKeyboardButton(text="💌 ғᴇᴅ", url="t.me/Part_Of_Rocks"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="💠 ᴏᴡɴᴇʀ",
-                             url=f"https://t.me/HarshitSharma361"),
+                             text="💌 ᴏᴡɴᴇʀ",
+                             url=f"https://t.me/Dr_Assad_Ali"),
                        InlineKeyboardButton(
-                             text="💠 ɴᴇᴛᴡᴏʀᴋ",
+                             text="💌 ɴᴇᴛᴡᴏʀᴋ",
                              url=f"https://t.me/Shayri_Music_Lovers"),
                         ],
                        [
-                           InlineKeyboardButton(text="💠 ʟᴏᴠᴇ", url="t.me/Give_Me_Heart"
+                           InlineKeyboardButton(text="💓 ʟᴏᴠᴇ", url="t.me/Give_Me_Heart"
          ),
     ],
 ]
@@ -267,8 +267,8 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="💠 ᴋɪɴɢ ", url=f"t.me/Dr_Asad_Ali"),
-                  InlineKeyboardButton(text="💠 ᴜᴘᴅᴀᴛᴇs ", url=f"t.me/AsadSupport"),
+                  InlineKeyboardButton(text="💌 ᴋɪɴɢ ", url=f"t.me/Dr_Assad_Ali"),
+                  InlineKeyboardButton(text="😎 ᴜᴘᴅᴀᴛᴇs ", url=f"t.me/AsadSupport"),
                   ]
                 ]
             ),
@@ -347,7 +347,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Powered by [Dr Asad Ali](t.me/Dr_Asad_Ali) And [Harshit Sharma](t.me/HarshitSharma361)\nHere is the help for the *{}* module:\n".format(
+                "Powered by [Dr Asad Ali](t.me/Dr_Assad_Ali) And [Harshit Sharma](t.me/HarshitSharma361)\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
