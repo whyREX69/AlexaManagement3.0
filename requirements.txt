@@ -44,7 +44,7 @@ hachoir
 pybase64
 pySmartDL
 validators
-pyrogram
+pyrogram==1.4.12
 datetime
 nltk
 aiohttp>=3.7.4
