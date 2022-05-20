@@ -20,7 +20,7 @@
 
 > ⭐️ Thanks to everyone for using Rocks Alexa, That is the greatest pleasure we have !
 
-## Avaiilable on Telegram as [@AsadSupport](https://t.me/ROCKS_ALEXA_MANAGEMENT_BOT)
+## Avaiilable on Telegram as [@AsadSupport](https://t.me/ALEXA_MANAGEMENTBOT)
 
 ## ✨ Easy To Deploy Direct In Repo✨
 
