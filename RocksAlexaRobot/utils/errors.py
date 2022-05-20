@@ -11,7 +11,7 @@ from functools import wraps
 from RocksAlexaRobot import pgram as app
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-LOG_GROUP_ID = int(-1001776076983)
+LOG_GROUP_ID = int(-1001717283097)
 
 def split_limits(text):
     if len(text) < 2048:
