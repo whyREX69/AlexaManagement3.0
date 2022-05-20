@@ -1,7 +1,7 @@
 # A Powerful Music And Management Bot
 # Property Of Rocks Indian Largest Chatting Group
 # Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
+# Rocks Â© @Dr_Asad_Ali Â© Rocks
 # Owner Asad + Harshit
 # Roses are red, Violets are blue, A face like yours, Belongs in a zoo
 
@@ -74,7 +74,7 @@ def list_nsfw_chats(update: Update, context: CallbackContext):
         try:
             x = context.bot.get_chat(int(*chat))
             name = x.title if x.title else x.first_name
-            text += f"�? <code>{name}</code>\n"
+            text += f"• <code>{name}</code>\n"
         except BadRequest:
             sql.rem_nsfw(*chat)
         except Unauthorized:
