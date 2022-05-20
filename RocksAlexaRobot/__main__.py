@@ -28,7 +28,7 @@ from RocksAlexaRobot.modules import ALL_MODULES
 from RocksAlexaRobot.modules.helper_funcs.chat_status import is_user_admin
 from RocksAlexaRobot.modules.helper_funcs.misc import paginate_modules
 from RocksAlexaRobot.modules.disable import DisableAbleCommandHandler
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
 from telegram.error import (
     BadRequest,
     ChatMigrated,
