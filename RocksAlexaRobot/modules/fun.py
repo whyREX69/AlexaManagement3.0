@@ -60,9 +60,7 @@ def asadali(update, context):
                   InlineKeyboardButton(text="✌ YᴏᴜTᴜʙᴇ️ ✌️", url=f"https://youtube.com/jankarikiduniya"),
                   ]
                 ]
-            ),
-        )
-    
+            )
 @run_async
 def gbun(update, context):
     user = update.effective_user
