@@ -234,4 +234,4 @@ Commands :
  - /baka: Sends Random Baka Shout GIFs.
 """
 
-__mod_name__ = "? ????????"
+__mod_name__ = "🐰 ᴀɴɪᴍᴇᴘɢ"

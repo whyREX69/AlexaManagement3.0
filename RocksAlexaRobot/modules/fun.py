@@ -51,7 +51,7 @@ ASD_IMG= "https://telegra.ph/file/4f7894b5dd5cd1d47543a.jpg"
 def asadali(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
-    reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
+    reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ*"
     message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
     buttons=(
       [
@@ -281,6 +281,7 @@ SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 ALEXA_HANDLER = DisableAbleCommandHandler("alexa", alexa)
 
 dispatcher.add_handler(GOODMORNING_HANDLER)
+dispatcher.add_handler(ASADALI_HANDLER)
 dispatcher.add_handler(GOODNIGHT_HANDLER)
 dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(ABUSE_HANDLER)
