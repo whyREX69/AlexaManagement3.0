@@ -84,6 +84,7 @@ if ENV:
     API_ID = os.environ.get('API_ID', None)
     API_HASH = os.environ.get('API_HASH', None)
     DB_URI = os.environ.get('DATABASE_URL')
+    MONGO_DB_URI = os.environ.get('MONGO_DB_URI')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
@@ -172,6 +173,7 @@ else:
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
+    MONGO_DB_URI = Config.MONGO_DB_URI
     LOAD = Config.LOAD
     INFOPIC = Config.INFOPIC
     NO_LOAD = Config.NO_LOAD
