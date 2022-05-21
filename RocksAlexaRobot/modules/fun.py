@@ -58,8 +58,7 @@ def asadali(update, context):
             [
                 InlineKeyboardButton("💌 ᴄʜᴀᴛ 💌", url=f"t.me/Dr_Assad_Ali"),
                 InlineKeyboardButton(
-                    "✌ YᴏᴜTᴜʙᴇ️ ✌", url=f"https://youtube.com/jankarikiduniya}"
-                ),
+                    "✌ YᴏᴜTᴜʙᴇ️ ✌", url=f"https://youtube.com/jankarikiduniya"),
             ]
         ]
     )
