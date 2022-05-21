@@ -45,14 +45,14 @@ def goodmorning(update, context):
     reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
     message.reply_photo(GM_IMG,reply, parse_mode=ParseMode.MARKDOWN)
     
-ASD_IMG= "https://telegra.ph/file/01da92c39ea8040446fbd.mp4"
+ASD_IMG= "https://telegra.ph/file/4f7894b5dd5cd1d47543a.jpg"
 @run_async
 @typing_action
 def asadali(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
     disable_web_page_preview=True,
-    reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ\nTʜᴇʏ ᴀsᴋᴇᴅ ᴛʜᴇ ʀᴇᴀsᴏɴ ʙᴇʜɪɴᴅ ᴍʏ ᴀᴛᴛɪᴛᴜᴅᴇ...😇 I ʀᴇᴘʟɪᴇᴅ, ᴛʜᴇ ᴡᴀʏ ʏᴏᴜ ᴛʀᴇᴀᴛᴇᴅ ᴍᴇ....🌹 \n❥❥━───➸➽♦️❥❥━───➸➽\n🤞Cᴏ-ғᴏᴜɴᴅᴇʀ .....Oғ....[Rᴏᴄᴋs](https://t.me/Shayri_Music_Lovers) 🤞\n⚔️★🌹★ [Click Here](https://t.me/Dr_Asad_Ali) ★🌹⚔️★\n❥❥━───➸➽♦️❥❥━───➸➽\nCʜᴏᴏsᴇ ᴍᴇ ᴏʀ ʟᴏsᴇ ᴍᴇ...🙃\nI’ᴍ ɴᴏᴛ ᴀ ʙᴀᴄᴋᴜᴘ ᴘʟᴀɴ ᴀɴᴅ..🤔 ᴅᴇғɪɴɪᴛᴇʟʏ ɴᴏᴛ ᴀ sᴇᴄᴏɴᴅ...😄 ᴄʜᴏɪᴄᴇ.....🙃*"
+    reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ\nTʜᴇʏ ᴀsᴋᴇᴅ ᴛʜᴇ ʀᴇᴀsᴏɴ ʙᴇʜɪɴᴅ ᴍʏ ᴀᴛᴛɪᴛᴜᴅᴇ...😇 I ʀᴇᴘʟɪᴇᴅ, ᴛʜᴇ ᴡᴀʏ ʏᴏᴜ ᴛʀᴇᴀᴛᴇᴅ ᴍᴇ....🌹 \n❥❥━───➸➽♦️❥❥━───➸➽\n🤞Cᴏ-ғᴏᴜɴᴅᴇʀ .....Oғ....#ROCKS 🤞\n⚔️★🌹★ Click Here @Dr_Asad_Ali ★🌹⚔️★\n❥❥━───➸➽♦️❥❥━───➸➽\nCʜᴏᴏsᴇ ᴍᴇ ᴏʀ ʟᴏsᴇ ᴍᴇ...🙃\nI’ᴍ ɴᴏᴛ ᴀ ʙᴀᴄᴋᴜᴘ ᴘʟᴀɴ ᴀɴᴅ..🤔 ᴅᴇғɪɴɪᴛᴇʟʏ ɴᴏᴛ ᴀ sᴇᴄᴏɴᴅ...😄 ᴄʜᴏɪᴄᴇ.....🙃*"
     message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
     
 @run_async
