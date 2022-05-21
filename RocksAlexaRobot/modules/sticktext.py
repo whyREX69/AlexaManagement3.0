@@ -69,11 +69,5 @@ nonsense - all you need to do to make a sticker is pick a design and type your m
 - `/sticktext`*:* Make text stickers with your bot.
 """
 
-STICKTEXT = DisableAbleCommandHandler("sticktext", sticktext)
-
-dispatcher.add_handler(STICKTEXT)
-
-
 __mod_name__ = "😛 ᴛxᴛsᴛɪᴄᴋᴇʀ"
 __command_list__ = ["sticktext"]
-__handlers__ = [STICKTEXT]
