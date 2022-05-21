@@ -3,7 +3,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from RocksAlexaRobot.events import register
 import random
-from RocksAlexaRobot import LOGGER, pgram as client
+from RocksAlexaRobot import LOGGER, pgram as pbot
 from telethon import types
 from telethon.tl import functions
 
@@ -11,13 +11,13 @@ async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
 
         return isinstance(
-            (await client(functions.channels.GetParticipantRequest(chat, user))).participant,
+            (await pbot(functions.channels.GetParticipantRequest(chat, user))).participant,
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator)
         )
     elif isinstance(chat, types.InputPeerChat):
 
-        ui = await client.get_peer_id(user)
-        ps = (await client(functions.messages.GetFullChatRequest(chat.chat_id))) \
+        ui = await pbot.get_peer_id(user)
+        ps = (await pbot(functions.messages.GetFullChatRequest(chat.chat_id))) \
             .full_chat.participants.participants
         return isinstance(
             next((p for p in ps if p.user_id == ui), None),
@@ -56,7 +56,7 @@ async def sticklet(event):
     image_stream.name = "sticker.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
-    await event.client.send_file(event.chat_id, image_stream)
+    await event.pbot.send_file(event.chat_id, image_stream)
     
     
 __help__ = """
