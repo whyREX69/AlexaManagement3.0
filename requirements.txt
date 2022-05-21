@@ -60,7 +60,6 @@ tgcrypto
 python-arq==6.0.3
 hachoir
 configparser
-textwrap
 bing_image_downloader
 parsel
 urllib3
