@@ -17,6 +17,9 @@ import telegram.ext as tg
 from redis import StrictRedis
 from pyrogram import Client, errors
 from telethon import TelegramClient
+from telethon.sessions import StringSession
+from telethon.sessions import MemorySession
+
 
 StartTime = time.time()
 
@@ -218,7 +221,7 @@ else:
 aiohttpsession = ClientSession()
 arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Alexa", API_ID, API_HASH)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 pgram = Client("RocksAlexaRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
