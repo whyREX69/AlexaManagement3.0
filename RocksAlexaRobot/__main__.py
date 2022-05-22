@@ -262,9 +262,8 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats(),
+                    sql.num_chats()),
                 timeout=60,
-            )
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
@@ -431,10 +430,9 @@ def alexa_data_callback(update, context):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats(),
+                    sql.num_chats()),
                 timeout=60,
                 disable_web_page_preview=False,
-        )
 
 
 def get_help(update: Update, context: CallbackContext):
