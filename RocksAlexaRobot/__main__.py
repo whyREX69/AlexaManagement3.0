@@ -256,13 +256,13 @@ def start(update: Update, context: CallbackContext):
             )
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-            random.choice(PM_IMG),PM_START_TEXT,
+               random.choice(PM_IMG),PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),                        
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                    sql.num_chats()),
                 timeout=60,
             )
     else:
@@ -424,20 +424,17 @@ def alexa_data_callback(update, context):
             ),
         )
     elif query.data == "alexa_back":
-        first_name = update.effective_user.first_name
         query.message.edit_text(
-                PM_START_TEXT.format(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
         )
-
-
 
 
 def get_help(update: Update, context: CallbackContext):
