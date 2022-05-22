@@ -31,3 +31,12 @@ async def hmm(event):
     Text = ok
     k = secureme.decrypt(Text)
     await event.reply(k)
+
+
+__help__ = """
+ *Text encryption and decryption...*
+ - `/decrypt` Decrypt your encrypted text
+ - `/encrypt` Encrypt your text
+"""
+
+__mod_name__ = "? ??????????"

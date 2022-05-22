@@ -52,7 +52,7 @@ def asadali(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
     disable_web_page_preview=True,
-    reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ\nTʜᴇʏ ᴀsᴋᴇᴅ ᴛʜᴇ ʀᴇᴀsᴏɴ ʙᴇʜɪɴᴅ ᴍʏ ᴀᴛᴛɪᴛᴜᴅᴇ...😇 I ʀᴇᴘʟɪᴇᴅ, ᴛʜᴇ ᴡᴀʏ ʏᴏᴜ ᴛʀᴇᴀᴛᴇᴅ ᴍᴇ....🌹 \n❥❥━───➸➽♦️❥❥━───➸➽\n🤞Cᴏ-ғᴏᴜɴᴅᴇʀ .....Oғ....#ROCKS 🤞\n⚔️★🌹★ Click Here @Dr_Asad_Ali ★🌹⚔️★\n❥❥━───➸➽♦️❥❥━───➸➽\nCʜᴏᴏsᴇ ᴍᴇ ᴏʀ ʟᴏsᴇ ᴍᴇ...🙃\nI’ᴍ ɴᴏᴛ ᴀ ʙᴀᴄᴋᴜᴘ ᴘʟᴀɴ ᴀɴᴅ..🤔 ᴅᴇғɪɴɪᴛᴇʟʏ ɴᴏᴛ ᴀ sᴇᴄᴏɴᴅ...😄 ᴄʜᴏɪᴄᴇ.....🙃*"
+    reply = f"*ʜɪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 \n ɪᴛ's ᴍᴇ ɪᴛᴛᴜ 🤏 sᴀ ᴀsᴀᴅ ᴋᴇsʏ ʜᴏ\nTʜᴇʏ ᴀsᴋᴇᴅ ᴛʜᴇ ʀᴇᴀsᴏɴ ʙᴇʜɪɴᴅ ᴍʏ ᴀᴛᴛɪᴛᴜᴅᴇ...😇 I ʀᴇᴘʟɪᴇᴅ, ᴛʜᴇ ᴡᴀʏ ʏᴏᴜ ᴛʀᴇᴀᴛᴇᴅ ᴍᴇ....🌹 \n❥❥━───➸➽♦️❥❥━───➸➽\n🤞Cᴏ-ғᴏᴜɴᴅᴇʀ .....Oғ....#ROCKS 🤞\n🌹Click Here @Dr_Aasad_Ali 🌹\n❥❥━───➸➽♦️❥❥━───➸➽\nCʜᴏᴏsᴇ ᴍᴇ ᴏʀ ʟᴏsᴇ ᴍᴇ...🙃\nI’ᴍ ɴᴏᴛ ᴀ ʙᴀᴄᴋᴜᴘ ᴘʟᴀɴ ᴀɴᴅ..🤔 ᴅᴇғɪɴɪᴛᴇʟʏ ɴᴏᴛ ᴀ sᴇᴄᴏɴᴅ...😄 ᴄʜᴏɪᴄᴇ.....🙃*"
     message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
     
 @run_async
@@ -291,3 +291,12 @@ dispatcher.add_handler(ALEXA_HANDLER)
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(REPO_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
+
+
+
+__mod_name__ = "💞 ғᴜɴ"
+
+__help__ = """
+=>> *Fun Module all cmd are given below* 🤫
+ /alexa, /slap, /decide, /judge, /abuse, /insult, /truth, /dare, /gbam, /pat, /gbun, /repo 😊
+"""

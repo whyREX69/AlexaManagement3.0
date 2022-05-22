@@ -91,6 +91,10 @@ __command_list__ = [
 ]
 
 
-#myinfo module by Valt
-#Copyright by @pegasusXteam
+__help__ = """
+ *Info generator...*
+ - `/myinfo` generate your own info.
+"""
+
+__mod_name__ = "ℹ️ ᴍʏɪɴғᴏ"
 

@@ -26,32 +26,32 @@ async def is_register_admin(chat, user):
     else:
         return None
 
-@register(pattern="^/sticktext (.*)")
+@register(pattern="^/sticklet (.*)")
 async def sticklet(event):
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
        return
-    sticktext = event.pattern_match.group(1)
-    if not sticktext:
+    sticklet = event.pattern_match.group(1)
+    if not sticklet:
     	get = await event.get_reply_message()
-    	sticktext = get.text
-    if not sticktext:
+    	sticklet = get.text
+    if not sticklet:
     	await event.reply("`I need text to make sticker !`")
     	return
-    sticktext = textwrap.wrap(sticktext, width=10)
-    sticktext = '\n'.join(sticktext)
+    sticklet = textwrap.wrap(sticklet, width=10)
+    sticklet = '\n'.join(sticklet)
     image = Image.new("RGBA", (512, 512), (255, 255, 255, 0))
     draw = ImageDraw.Draw(image)
     fontsize = 230
-    font = ImageFont.truetype("./RocksAlexaRobot/resources/LOGOS/default.ttf", size=fontsize)
-    while draw.multiline_textsize(sticktext, font=font) > (512, 512):
+    font = ImageFont.truetype("./RocksAlexaRobot/resources/default.ttf", size=fontsize)
+    while draw.multiline_textsize(sticklet, font=font) > (512, 512):
         fontsize -= 3
-        font = ImageFont.truetype("./RocksAlexaRobot/resources/LOGOS/default.ttf", size=fontsize)
-    width, height = draw.multiline_textsize(sticktext, font=font)
+        font = ImageFont.truetype("./RocksAlexaRobot/resources/default.ttf", size=fontsize)
+    width, height = draw.multiline_textsize(sticklet, font=font)
     gg = ["red", "blue", "green", "yellow", "orange", "violet", "indigo"]
     hh = random.choice(gg)
     range = f"{hh}"
-    draw.multiline_text(((512-width)/2,(512-height)/2), sticktext, font=font, fill=range)
+    draw.multiline_text(((512-width)/2,(512-height)/2), sticklet, font=font, fill=range)
     image_stream = io.BytesIO()
     image_stream.name = "sticker.webp"
     image.save(image_stream, "WebP")
@@ -66,8 +66,7 @@ It doesn't matter if your message is a joke, showing support, political opinion,
 nonsense - all you need to do to make a sticker is pick a design and type your message. It's that easy!
 
 *Only one command:*
-- `/sticktext`*:* Make text stickers with your bot.
+- `/sticklet`*:* Make text stickers with your bot.
 """
 
 __mod_name__ = "😛 ᴛxᴛsᴛɪᴄᴋᴇʀ"
-__command_list__ = ["/sticktext"]

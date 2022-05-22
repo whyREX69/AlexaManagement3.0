@@ -5,24 +5,43 @@ from io import BytesIO
 
 from telegram import ParseMode, Update
 from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import (CallbackContext, CommandHandler, Filters,
-                          MessageHandler, run_async)
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
 from telegram.utils.helpers import mention_html
 
 import RocksAlexaRobot.modules.sql.global_bans_sql as sql
 from RocksAlexaRobot.modules.sql.users_sql import get_user_com_chats
-from RocksAlexaRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
-                          SUPPORT_CHAT, SPAMWATCH_SUPPORT_CHAT, DEMONS, TIGERS,
-                          WOLVES, sw, dispatcher)
-from RocksAlexaRobot.modules.helper_funcs.chat_status import (is_user_admin,
-                                                           support_plus,
-                                                           user_admin)
-from RocksAlexaRobot.modules.helper_funcs.extraction import (extract_user,
-                                                          extract_user_and_text)
+from RocksAlexaRobot import (
+    DEV_USERS,
+    EVENT_LOGS,
+    OWNER_ID,
+    STRICT_GBAN,
+    DRAGONS,
+    SUPPORT_CHAT,
+    SPAMWATCH_SUPPORT_CHAT,
+    DEMONS,
+    TIGERS,
+    WOLVES,
+    sw,
+    dispatcher,
+)
+from RocksAlexaRobot.modules.helper_funcs.chat_status import (
+    is_user_admin,
+    support_plus,
+    user_admin,
+)
+from RocksAlexaRobot.modules.helper_funcs.extraction import (
+    extract_user,
+    extract_user_and_text,
+)
 from RocksAlexaRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
- 
+
 GBAN_ERRORS = {
     "User is an administrator of the chat",
     "Chat not found",

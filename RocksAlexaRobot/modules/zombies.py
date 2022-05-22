@@ -1,5 +1,5 @@
 # Written By Asad Ali
-# Rocks Alexa A Powerful Management Bot
+# Rocks Alexa A Powerful Management Bot By Asad
 
 import asyncio
 from asyncio import sleep
@@ -114,3 +114,13 @@ async def zombies(event):
         \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
 
     await cleaning_zombies.edit(del_status)
+
+
+
+__help__ = """
+ *Zombie Remover From Your Group...*
+ - `/zombies` remove all deleted account from your group.
+ - `/react` react on someone mesg
+"""
+
+__mod_name__ = "🧟 ᴢᴏᴍʙɪᴇ"

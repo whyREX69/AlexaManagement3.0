@@ -52,6 +52,6 @@ def shell(update: Update, context: CallbackContext):
 
 SHELL_HANDLER = CommandHandler(['sh'], shell)
 dispatcher.add_handler(SHELL_HANDLER)
-__mod_name__ = "🤗 sʜᴇʟʟs"
+__mod_name__ = "? s????"
 __command_list__ = ['sh']
 __handlers__ = [SHELL_HANDLER]

@@ -1,7 +1,7 @@
 # A Powerful Music And Management Bot
 # Property Of Rocks Indian Largest Chatting Group
 # Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
+# Rocks @Dr_Assad_Ali Rocks
 # Owner Asad Ali + Harshit
 # Roses are red, Violets are blue, A face like yours, Belongs in a zoo
 
@@ -218,6 +218,9 @@ def get_lst_of_files(input_directory, output_lst):
     return output_lst
   
   
-  
-  
-  
+__help__ = """
+ *File to zip converter...*
+ - `/zip` compress any file into zip
+"""
+
+__mod_name__ = "🤐 ᴢɪᴘ"

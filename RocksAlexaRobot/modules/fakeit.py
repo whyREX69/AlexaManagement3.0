@@ -41,11 +41,11 @@ async def _(event):
         url = "https://thispersondoesnotexist.com/image"
         response = requests.get(url)
         if response.status_code == 200:
-            with open("Sophia.jpg", "wb") as f:
+            with open("RocksAlexaRobot.jpg", "wb") as f:
                 f.write(response.content)
 
         captin = f"Fake Image powered by @Dr_Asad_Ali."
-        fole = "EzilaXBot.jpg"
+        fole = "RocksAlexaRobot.jpg"
         await Galaxy.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
         os.system("rm ./alexa.jpg ")
