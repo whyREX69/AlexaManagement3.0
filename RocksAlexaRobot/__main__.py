@@ -262,7 +262,7 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),
+                    sql.num_chats(),
                 timeout=60,
             )
     else:
@@ -431,7 +431,7 @@ def alexa_data_callback(update, context):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),
+                    sql.num_chats(),
                 timeout=60,
                 disable_web_page_preview=False,
         )
