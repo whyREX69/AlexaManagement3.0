@@ -38,6 +38,11 @@
          "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
          "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },
+      "MONGO_DB_URI": {
+         "description": "MongoDB uri for db function.",
+         "required": true,
+         "value": "your MongoDB"
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
@@ -95,6 +100,11 @@
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
          "value": "5303133436"
+      },
+      "STRING_SESSION": {
+         "description": "Fill with telethon string session.",
+         "required": true,
+         "value": "" 
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
