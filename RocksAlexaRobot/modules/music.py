@@ -14,7 +14,7 @@ from tswift import Song
 from yt_dlp import YoutubeDL
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
-from RocksAlexaRobot.utils.pluginhelper import get_text, progress
+from RocksAlexaRobot.utils.pluginhelpers import get_text, progress
 from RocksAlexaRobot import pbot, arq
 
 async def lyrics_func(answers, text):
