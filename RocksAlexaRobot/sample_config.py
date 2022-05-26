@@ -26,11 +26,11 @@ class Config(object):
 
     API_ID = 8858734  # integer value, dont use ""
     API_HASH = "e1df48857a3fbe3093a6ef5cd7ccfe41"
-    TOKEN = "1616584987:AAGiKBL-7Q4mihWH03AGtyBjfDNdp23zJVc"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 5303133436  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Dr_Assad_Ali"
-    SUPPORT_CHAT = 'Alexa_Help'  #Your own group for support, do not add the @
-    UPDATES_CHANNEL = 'AsadSupport' #Your own channel for Updates of bot, Do not add @
+    TOKEN = "5189246830:AAEVwFNM_4jtpYSrAw0ntw8oFfXJy0kYNsY"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1943696216  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "lived_enough"
+    SUPPORT_CHAT = 'perahinsg'  #Your own group for support, do not add the @
+    UPDATES_CHANNEL = 'summer_sux' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001717283097  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "http://removebg.com"
     TEMP_DOWNLOAD_DIRECTORY = ""
@@ -66,9 +66,9 @@ class Config(object):
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     ARQ_API_URL = "https://thearq.tech"
     ARQ_API_KEY = "GKNOHX-UDSREJ-AWTSGO-XFDSCY-ARQ"
-    CASH_API_KEY = 'awoo'  # Get your API key from https://www.alphavantage.co/support/#api-key
-    TIME_API_KEY = 'awoo'  # Get your API key from https://timezonedb.com/api
-    OPENWEATHERMAP_ID = 'awoo'
+    CASH_API_KEY = 'QOU31ON3L4APGUJ2'  # Get your API key from https://www.alphavantage.co/support/#api-key
+    TIME_API_KEY = '189PMUQVO37A'  # Get your API key from https://timezonedb.com/api
+    OPENWEATHERMAP_ID = 'f075d4857f24108b2020060f402924eb'
     WALL_API = 'awoo'  #For wallpapers, get one from https://wall.alphacoders.com/api.php
     AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
